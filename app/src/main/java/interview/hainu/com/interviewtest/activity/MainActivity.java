@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import interview.hainu.com.interviewtest.R;
+import interview.hainu.com.interviewtest.util.GenerateValueFiles;
 import interview.hainu.com.interviewtest.view.MyToggleButton;
 
 public class MainActivity extends Activity {
@@ -16,6 +17,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         main_toggle = (MyToggleButton) findViewById(R.id.main_toggle);
 
@@ -31,6 +33,9 @@ public class MainActivity extends Activity {
                 Toast.makeText(MainActivity.this,tip,Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
 
     }
 }
